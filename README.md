@@ -56,3 +56,37 @@ The agent is confused and does not move
 <h1> Assumptions </h1>
 <br />
 <small> The agent cannot move out of the world, an attempt to do so will result in no movement </small>
+<h1> Part 1 </h1>
+See <a href="initial.py"> initial.py </a> for the python code related to part 1. Because of the above Environment Dynamics there is some variablility but a sample statistical analysis of the observed discounted returns is below:
+<br />
+Mean:  -26.196
+<br />
+Standard Deviation:  50.85970491459816
+<br />
+Maximum:  10
+<br />
+Minimum:  -480
+<h1> Part 2 </h1>
+See <a href="optimal.py"> optimal.py </a> for the python code related to part 2. Below is the world in which the maximum future discounted rewards are displayed. Note that this was found using the Value Iteration method and iterated until the values changes were less than 0.05, which took 14 iterations. Also note that the xxx.xxx spaces represent the obstacles (states that cannot be entered).
+<br />
+[+003.74] [+004.24] [+004.79] [+005.40] [+005.96] 
+<br />
+[+004.06] [+004.67] [+005.37] [+006.13] [+006.79] 
+<br />
+[+003.59] [+004.08] [xxx.xxx] [+006.95] [+007.73] 
+<br />
+[+003.16] [+003.56] [xxx.xxx] [+007.82] [+008.79] 
+<br />
+[+002.72] [+002.43] [-010.00] [+008.79] [+010.00] 
+
+<h1> Part 3 </h1>
+see <a href="gridworld.py"> gridworld.py </a> for the python code related to Part 3. Similarly to Part 1, except using the above policy, it was run 10,000 times and some statistics are shown below.
+<br />
+Mean:  10
+<br />
+Standard Deviation:  0
+<br />
+Maximum:  10
+<br />
+Minimum:  10
+
