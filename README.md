@@ -58,7 +58,7 @@ The agent is confused and does not move
 <small> The agent cannot move out of the world, an attempt to do so will result in no movement </small>
 
 ## Part 1
-See [initial.py](src/initial.py) for the python code related to part 1. Because of the above Environment Dynamics there is some variablility but a sample statistical analysis of the observed discounted returns is below:
+See [initial.py](initial.py) for the python code related to part 1. Because of the above Environment Dynamics there is some variablility but a sample statistical analysis of the observed discounted returns is below:
 ```
 Mean:   -26.196
 Standard Deviation: 50.85970491459816
@@ -67,7 +67,7 @@ Minimuim:  -480
 ```
 
 ## Part 2
-see [optimal.py](src/optimal.py) for the python code related to Part 2. Below is the world in which the maximum future discounted rewards are displayed. Note that this was found using the Value Iteration method and iterated until the values changes were less than 0.05, which took 14 iterations. Also note that the xxx.xxx spaces represent the obstacles (states that cannot be entered).
+see [optimal.py](optimal.py) for the python code related to Part 2. Below is the world in which the maximum future discounted rewards are displayed. Note that this was found using the Value Iteration method and iterated until the values changes were less than 0.05, which took 14 iterations. Also note that the xxx.xxx spaces represent the obstacles (states that cannot be entered).
 ```
 [+003.74] [+004.24] [+004.79] [+005.40] [+005.96] 
 [+004.06] [+004.67] [+005.37] [+006.13] [+006.79] 
@@ -77,7 +77,7 @@ see [optimal.py](src/optimal.py) for the python code related to Part 2. Below is
 ```
 
 ## Part 3
-see [gridworld.py](src/gridworld.py) for the python code related to Part 3. Similarly to Part 1, except using the above policy, it was run 10,000 times and some statistics are shown below.
+see [gridworld.py](gridworld.py) for the python code related to Part 3. Similarly to Part 1, except using the above policy, it was run 10,000 times and some statistics are shown below.
 ```
 Mean:  10.0
 Standard Deviation:  0.0
